@@ -43,7 +43,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-      <nav className="block md:hidden absolute bottom-0 left-0 w-full bg-white shadow-lg z-10 px-6 py-2 border-t-[1px] border-gray-300">
+      <nav className="block md:hidden fixed bottom-0 left-0 w-full bg-white shadow-lg z-10 px-6 py-2 border-t-[1px] border-gray-300">
         <div className="container mx-auto justify-between items-center flex">
           <Link
             to="/"
@@ -55,7 +55,7 @@ const Navbar = () => {
         </div>
       </nav>
       {nav && (
-        <div className="block md:hidden absolute bottom-0 left-0 w-full bg-gray-200 shadow-2xl z-10 sm:px-12 px-2 py-9 py-4 rounded-t-3xl border-gray-300">
+        <div className="block md:hidden absolute bottom-0 left-0 w-full bg-gray-200 shadow-2xl z-10 sm:px-12 px-2 py-9  rounded-t-3xl border-gray-300">
           <div className="flex justify-between px-16 pb-5">
             <Link className="font-Opensans text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
               <IoMdHome className="text-xl mx-4" />
