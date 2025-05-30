@@ -89,7 +89,7 @@ const Footer = () => {
         {/* Scroll to Top Button */}
         <button
           onClick={scrollToTop}
-          className={`fixed bottom-10 right-8 z-10 p-2 rounded-md text-white transition-transform duration-200 shadow-md ${
+          className={`fixed bottom-20 right-8 z-10 p-2 rounded-md text-white transition-transform duration-200 shadow-md ${
             isVisible ? "scale-100 bg-gray-800" : "scale-0"
           } hover:text-[#ec6060d6]`}
           title="Go to top"

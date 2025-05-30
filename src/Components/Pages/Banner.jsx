@@ -12,13 +12,13 @@ const Banner = () => {
   //     document.body.removeChild(link);
   //   };
   return (
-    <section className="pt-20 bg-[#f9fafbe2]">
-      <div className="pb-24 2xl:pb-28 sm:pb-28 lg:pb-28  w-full">
+    <section className="md:py-20 py-12 bg-[#f9fafbe2]">
+      <div className="  w-full">
         <div className="container flex flex-col sm:flex-col xl:flex-row lg:flex-row md:flex-row">
           <div className=" w-full xl:w-2/5 lg:w-2/5 md:w-2/5 sm:w-full sm:justify-center sm:mx-auto">
-            <div className="w-full justify-center flex pt-0 xl:pt-12 lg:pt-9 md:pt-12 sm:pt-0">
+            <div className="w-full justify-center md:justify-end flex pt-0 xl:pt-12 lg:pt-9 md:pt-12 sm:pt-0 overflow-hidden">
               <img
-                className=" h-[200px] xl:h-[290px] lg:h-[250px] md:h-[220px] sm:h-[200px] w-[200px] xl:w-[290px] lg:w-[250px] md:w-[220px] sm:w-[200px] rounded-full border-2 border-gray-50 duration-200 relative hover:bg-[#122533] hover:opacity-100 cursor-pointer"
+                className=" md:h-72 sm:h-64 h-60 sm:w-64 w-60 md:w-72 rounded-full border-gray-50 duration-200 relative hover:bg-[#122533] hover:opacity-100 cursor-pointer object-cover border-8 overflow-hidden shadow"
                 src="banner.jpeg"
                 alt=""
               />

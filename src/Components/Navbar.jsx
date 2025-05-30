@@ -43,11 +43,11 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-      <nav className="block md:hidden fixed bottom-0 left-0 w-full bg-white shadow-lg z-10 px-6 py-2 border-t-[1px] border-gray-300">
+      <nav className="block md:hidden fixed bottom-0 left-0 w-full bg-white shadow-lg z-20 px-6 py-2 border-t-[1px] border-gray-300">
         <div className="container mx-auto justify-between items-center flex">
           <Link
             to="/"
-            className="text-2xl font-medium text-black font-Popins py-1"
+            className="sm:text-2xl text-xl font-medium text-black font-Popins py-1"
           >
             Pritom
           </Link>
@@ -55,38 +55,41 @@ const Navbar = () => {
         </div>
       </nav>
       {nav && (
-        <div className="block md:hidden fixed bottom-0 left-0 w-full bg-gray-200 shadow-2xl z-10 sm:px-12 px-2 py-9  rounded-t-3xl border-gray-300">
-          <div className="flex justify-between px-16 pb-5">
-            <Link className="font-Opensans text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
-              <IoMdHome className="text-xl mx-4" />
-              <p className="">Home</p>
-            </Link>
-            <Link className="font-Opensans text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
-              <FaUser className="text-xl mx-4" />
-              <p className="">About</p>
-            </Link>
-            <Link className="font-Opensans text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
-              <FaFile className="text-xl mx-4" />
-              <p className="pl-1">Skills</p>
-            </Link>
-          </div>
-          <div className="flex justify-between px-16">
-            <Link className="font-Opensans text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
-              <SiAppgallery className="text-xl mx-4" />
-              <p className="">Portfolio</p>
-            </Link>
-            <Link className="font-Opensans text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
-              <IoMdHome className="text-xl mx-4" />
-              <p className="">Contact</p>
-            </Link>
-            <Link className="font-Opensans text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
-              <p
-                className="text-end justify-end pt-2 px-3"
-                onClick={() => setNav(false)}
-              >
-                X
-              </p>
-            </Link>
+        <div className="block md:hidden fixed bottom-0 left-0 w-full h-full bg-[rgba(0,0,0,0.16)] z-30">
+          <div onClick={() => setNav(false)} className="h-[65%]"></div>
+          <div className="h-[35%] bg-gray-200 shadow-2xl z-20 sm:px-12 px-2  py-9  rounded-t-3xl border-gray-300">
+            <div className="flex justify-between sm:px-16 px-10 pb-5">
+              <Link className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
+                <IoMdHome className="text-lg sm:text-xl mx-4" />
+                <p className="">Home</p>
+              </Link>
+              <Link className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
+                <FaUser className="text-lg sm:text-xl mx-4" />
+                <p className="">About</p>
+              </Link>
+              <Link className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
+                <FaFile className="text-lg sm:text-xl mx-4" />
+                <p className="pl-1">Skills</p>
+              </Link>
+            </div>
+            <div className="flex justify-between sm:px-16 px-10">
+              <Link className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
+                <SiAppgallery className="text-lg sm:text-xl mx-4" />
+                <p className="">Portfolio</p>
+              </Link>
+              <Link className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
+                <IoMdHome className="text-lg sm:text-xl mx-4" />
+                <p className="">Contact</p>
+              </Link>
+              <Link className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
+                <p
+                  className="text-end justify-end pt-2 px-3"
+                  onClick={() => setNav(false)}
+                >
+                  X
+                </p>
+              </Link>
+            </div>
           </div>
         </div>
       )}
