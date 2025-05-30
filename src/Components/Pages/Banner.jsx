@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 import { TbBrandFiverr } from "react-icons/tb";
 const Banner = () => {
-//   const handleDownload = () => {
-//     const link = document.createElement("a");
-//     link.download = "My_CV.pdf";
-//     document.body.appendChild(link);
-//     link.click();
-//     document.body.removeChild(link);
-//   };
+  //   const handleDownload = () => {
+  //     const link = document.createElement("a");
+  //     link.download = "My_CV.pdf";
+  //     document.body.appendChild(link);
+  //     link.click();
+  //     document.body.removeChild(link);
+  //   };
   return (
     <section className="pt-20 bg-[#f9fafbe2]">
       <div className="pb-24 2xl:pb-28 sm:pb-28 lg:pb-28  w-full">
@@ -46,6 +46,9 @@ const Banner = () => {
                   repeat={Infinity}
                 />
               </h4>
+              <p className=" text-lg md:text-xl sm:text-lg font-semibold text-gray-500 font-Nunito-font">
+                Building scalable and elegant web applications
+              </p>
             </div>
             <div className="flex pt-4 gap-3 pl-20 justify-start sm:justify-center md:justify-start lg:justify-start xl:justify-start">
               {/* <button onClick={handleDownload} className="">
@@ -57,15 +60,15 @@ const Banner = () => {
                   <span className="relative">Download CV</span>
                 </a>
               </button> */}
-                <Link
-                  to="contact"
-                  className="relative inline-flex items-center justify-center xl:px-10 lg:px-10 text-xs sm:text-sm md:text-base lg:text-base xl:text-lg md:px-6 sm:px-5 px-4 py-3 lg:py-4 xl:py-4 md:py-3 sm:py-3 overflow-hidden  font-medium font-Nunito-font text-white bg-gray-800 rounded-lg group"
-                >
-                  <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-gray-900 rounded-full group-hover:w-56 group-hover:h-56"></span>
-                  <span className="relative">
-                    <Link to="/contact">Let's Talk</Link>
-                  </span>
-                </Link>
+              <Link
+                to="contact"
+                className="relative inline-flex items-center justify-center xl:px-10 lg:px-10 text-xs sm:text-sm md:text-base lg:text-base xl:text-lg md:px-6 sm:px-5 px-4 py-3 lg:py-4 xl:py-4 md:py-3 sm:py-3 overflow-hidden  font-medium font-Nunito-font text-white bg-gray-800 rounded-lg group"
+              >
+                <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-gray-900 rounded-full group-hover:w-56 group-hover:h-56"></span>
+                <span className="relative">
+                  <Link to="/contact">Let's Talk</Link>
+                </span>
+              </Link>
             </div>
             <div className=" pt-10 pl-20 justify-start flex sm:justify-center md:justify-start lg:justify-start xl:justify-start">
               <ul className="flex gap-3">
