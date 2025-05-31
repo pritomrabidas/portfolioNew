@@ -6,6 +6,7 @@ import { IoMdHome } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
 import { FaFile } from "react-icons/fa";
 import { SiAppgallery } from "react-icons/si";
+import { FaMicrophoneAlt } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -78,7 +79,7 @@ const Navbar = () => {
                 <p className="">Portfolio</p>
               </Link>
               <Link className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
-                <IoMdHome className="text-lg sm:text-xl mx-4" />
+                <FaMicrophoneAlt className="text-lg sm:text-xl mx-4" />
                 <p className="">Contact</p>
               </Link>
               <Link className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">

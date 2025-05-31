@@ -83,13 +83,13 @@ const Footer = () => {
 
         {/* Copyright */}
         <p className="mt-6 text-sm text-gray-600 font-[Poppins]">
-          © 2024 - All rights reserved by Pritom
+          © 2025 - All rights reserved by Pritom
         </p>
 
         {/* Scroll to Top Button */}
         <button
           onClick={scrollToTop}
-          className={`fixed bottom-20 right-8 z-10 p-2 rounded-md text-white transition-transform duration-200 shadow-md ${
+          className={`fixed bottom-20 right-2 sm:right-4 md:right-8 z-10 p-2 rounded-md text-white transition-transform duration-200 shadow-md cursor-pointer ${
             isVisible ? "scale-100 bg-gray-800" : "scale-0"
           } hover:text-[#ec6060d6]`}
           title="Go to top"
