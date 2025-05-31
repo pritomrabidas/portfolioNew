@@ -17,7 +17,7 @@ const Footer = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
-    <footer className="bg-white">
+    <footer className="bg-[#f9fafbf4]">
       <div className="container mx-auto py-8 text-center">
         {/* Brand */}
         <p

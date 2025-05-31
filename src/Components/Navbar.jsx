@@ -56,9 +56,12 @@ const Navbar = () => {
         </div>
       </nav>
       {nav && (
-        <div className="block md:hidden fixed bottom-0 left-0 w-full h-full bg-[rgba(0,0,0,0.16)] z-30">
-          <div onClick={() => setNav(false)} className="h-[65%]"></div>
-          <div className="h-[35%] bg-gray-200 shadow-2xl z-20 sm:px-12 px-2  py-9  rounded-t-3xl border-gray-300">
+        <div className="block md:hidden fixed bottom-0 left-0 w-full h-full  z-30">
+          <div
+            onClick={() => setNav(false)}
+            className="h-[65%]"
+          ></div>
+          <div className="h-[35%] bg-gray-100 shadow-2xl z-20 sm:px-12 px-2  py-9  rounded-t-3xl border-gray-300">
             <div className="flex justify-between sm:px-16 px-10 pb-5">
               <Link className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
                 <IoMdHome className="text-lg sm:text-xl mx-4" />
