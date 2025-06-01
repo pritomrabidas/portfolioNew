@@ -1,7 +1,8 @@
 // App.jsx
 import { useState } from "react";
-import { Card, CardContent } from "./Card";
 import { Button } from "./Button";
+import CardContent from "./CardContent";
+import Card from "./Card";
 
 const projects = [
   {
