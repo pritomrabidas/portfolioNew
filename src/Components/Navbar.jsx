@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FiAlignRight } from "react-icons/fi";
 import { IoGrid } from "react-icons/io5";
 import { IoMdHome } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
