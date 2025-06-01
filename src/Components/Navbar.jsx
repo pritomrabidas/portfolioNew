@@ -57,41 +57,56 @@ const Navbar = () => {
       </nav>
       {nav && (
         <div className="block md:hidden fixed bottom-0 left-0 w-full h-full  z-30">
-          <div
-            onClick={() => setNav(false)}
-            className="h-[65%]"
-          ></div>
+          <div onClick={() => setNav(false)} className="h-[65%]"></div>
           <div className="h-[35%] bg-gray-100 shadow-2xl z-20 sm:px-12 px-2  py-9  rounded-t-3xl border-gray-300">
             <div className="flex justify-between sm:px-16 px-10 pb-5">
-              <Link className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
+              <Link
+                to="/"
+                onClick={() => setNav(false)}
+                className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer"
+              >
                 <IoMdHome className="text-lg sm:text-xl mx-4" />
                 <p className="">Home</p>
               </Link>
-              <Link className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
+              <Link
+                to="about"
+                onClick={() => setNav(false)}
+                className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer"
+              >
                 <FaUser className="text-lg sm:text-xl mx-4" />
                 <p className="">About</p>
               </Link>
-              <Link className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
+              <Link
+                to="skills"
+                onClick={() => setNav(false)}
+                className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer"
+              >
                 <FaFile className="text-lg sm:text-xl mx-4" />
                 <p className="pl-1">Skills</p>
               </Link>
             </div>
             <div className="flex justify-between sm:px-16 px-10">
-              <Link className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
+              <Link
+                to="portfolio"
+                onClick={() => setNav(false)}
+                className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer"
+              >
                 <SiAppgallery className="text-lg sm:text-xl mx-4" />
                 <p className="">Portfolio</p>
               </Link>
-              <Link className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
+              <Link
+                to="contact"
+                onClick={() => setNav(false)}
+                className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer"
+              >
                 <FaMicrophoneAlt className="text-lg sm:text-xl mx-4" />
                 <p className="">Contact</p>
               </Link>
-              <Link className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer">
-                <p
-                  className="text-end justify-end pt-2 px-3"
-                  onClick={() => setNav(false)}
-                >
-                  X
-                </p>
+              <Link
+                onClick={() => setNav(false)}
+                className="font-Opensans text-base sm:text-lg text-black font-medium items-center justify-center shadow px-4 py-3 rounded-lg cursor-pointer"
+              >
+                <p className="text-end justify-end pt-2 px-3">X</p>
               </Link>
             </div>
           </div>

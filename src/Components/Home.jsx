@@ -4,6 +4,7 @@ import About from "./Pages/About";
 import Skills from "./Pages/Skills";
 import Qualification from "./Pages/Qualification";
 import Contact from "./Pages/Contact";
+import Portfolio from "./Pages/Portfolio";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <About />
       <Skills />
       <Qualification />
+      <Portfolio/>
       <Contact/>
     </div>
   );
