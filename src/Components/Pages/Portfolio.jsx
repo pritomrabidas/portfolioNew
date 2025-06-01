@@ -1,8 +1,28 @@
-// App.jsx
 import { useState } from "react";
-import CardContent from "./CardContent";
-import Card from "./Card";
-import Buton from "./Buton";
+
+// Card component
+const Card = ({ children, className }) => {
+  return (
+    <div className={`bg-white rounded-lg shadow ${className}`}>{children}</div>
+  );
+};
+
+// CardContent component
+const CardContent = ({ children, className }) => {
+  return <div className={`p-4 ${className}`}>{children}</div>;
+};
+
+// Button component
+const Buton = ({ children, className, ...props }) => {
+  return (
+    <button
+      className={`px-4 py-2 rounded bg-primary text-secandari hover:bg-primary transition text-sm font-normal font-Nunito-font ${className}`}
+      {...props}
+    >
+      {children}
+    </button>
+  );
+};
 
 const projects = [
   {
@@ -46,7 +66,7 @@ const Portfolio = () => {
       : projects.filter((project) => project.category === activeCategory);
 
   return (
-    <section className=" bg-[#f9fafbe2] py-10 md:py-20 px-4">
+    <section className="bg-[#f9fafbe2] py-10 md:py-20 px-4">
       <div className="container mx-auto px-4">
         <h2
           data-aos="fade-right"
@@ -78,6 +98,7 @@ const Portfolio = () => {
             </Buton>
           ))}
         </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {filteredProjects.map((project, idx) => (
             <Card
@@ -89,7 +110,7 @@ const Portfolio = () => {
                 alt={project.title}
                 className="w-full h-68 object-cover group-hover:scale-105 transition-transform duration-300"
               />
-              <CardContent className="p-4">
+              <CardContent>
                 <h2 className="text-xl font-Monrope font-semibold text-gray-800 mb-2">
                   {project.title}
                 </h2>
@@ -117,4 +138,5 @@ const Portfolio = () => {
     </section>
   );
 };
+
 export default Portfolio;
