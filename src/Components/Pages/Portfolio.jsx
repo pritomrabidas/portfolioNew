@@ -2,7 +2,7 @@
 import { useState } from "react";
 import CardContent from "./CardContent";
 import Card from "./Card";
-import Button from "./Button";
+import Buton from "./Buton";
 
 const projects = [
   {
@@ -65,7 +65,7 @@ const Portfolio = () => {
 
         <div className="flex justify-center gap-4 pb-9 flex-wrap pt-3">
           {categories.map((category) => (
-            <Button
+            <Buton
               key={category}
               onClick={() => setActiveCategory(category)}
               className={`${
@@ -75,7 +75,7 @@ const Portfolio = () => {
               } border border-gray-300 shadow-sm cursor-pointer`}
             >
               {category}
-            </Button>
+            </Buton>
           ))}
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
