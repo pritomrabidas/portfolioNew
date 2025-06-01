@@ -3,7 +3,7 @@ import SkilIteam from "./SkillsItem";
 
 const Skills = () => {
   return (
-    <section className="md:py-20 py-12 bg-[#f9fafbf4]">
+    <section className="md:py-20 px-4 py-12 bg-[#f9fafbf4]">
       <div className="container mx-auto">
         <h2
           data-aos="fade-right"

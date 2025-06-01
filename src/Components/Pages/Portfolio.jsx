@@ -5,32 +5,32 @@ import { Button } from "./Button";
 
 const projects = [
   {
-    title: "Food Website",
+    title: "Agency One Page",
     category: "Web",
-    image: "banner.jpeg",
-    demo: "#",
-    code: "#",
+    image: "portfolio-1.png",
+    demo: "https://paralax-agency.vercel.app/",
+    code: "https://github.com/pritomrabidas",
   },
   {
-    title: "Ecommerce",
+    title: "SkinCare",
     category: "Web",
-    image: "https://via.placeholder.com/300x200?text=Ecommerce",
-    demo: "#",
-    code: "#",
+    image: "portfolio-2.png",
+    demo: "https://skincare-e-commerce-nine.vercel.app/",
+    code: "https://github.com/pritomrabidas",
   },
   {
-    title: "Tic Tac Toe Game",
+    title: "Student Dashboard",
+    category: "Web",
+    image: "portfolio-3.png",
+    demo: "https://dash-board-five-wine.vercel.app/",
+    code: "https://github.com/pritomrabidas",
+  },
+  {
+    title: "ToDo",
     category: "App",
-    image: "https://via.placeholder.com/300x200?text=Tic+Tac+Toe",
-    demo: "#",
-    code: "#",
-  },
-  {
-    title: "Login Design",
-    category: "Design",
-    image: "https://via.placeholder.com/300x200?text=Login+Design",
-    demo: "#",
-    code: "#",
+    image: "todo.png",
+    demo: "https://react-to-do-omega-five.vercel.app/",
+    code: "https://github.com/pritomrabidas",
   },
 ];
 
